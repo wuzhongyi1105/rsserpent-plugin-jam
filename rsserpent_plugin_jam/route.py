@@ -29,7 +29,7 @@ async def provider() -> dict:
         pub_date = arrow.get( date[g].string[2:] )
         date_list.append(pub_date)
         # Get URL
-        url = 'https://www.jsmsg.com/' + urls[g].attrs['href']
+        url = 'https://www.jsmsg.com/news/' + urls[g].attrs['href']
         url_list.append(url)
         # Get Content
         text_response = session.get(url)
